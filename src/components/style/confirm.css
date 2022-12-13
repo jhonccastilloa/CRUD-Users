@@ -9,7 +9,6 @@
   padding: 2rem;
   display: grid;
   gap: 25px;
-  transition: transform 1s ease;
   margin: 0 15px;
   color: azure;
   transition: transform .5s ease;
