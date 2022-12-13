@@ -1,0 +1,25 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(45deg, #FC466B, #3F5EFB);
+  min-height: 100vh;
+}
+input{
+  font-family: inherit;
+}
