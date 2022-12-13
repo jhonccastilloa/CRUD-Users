@@ -12,20 +12,19 @@ const crud = () => {
   const [hiddenAlert, setHiddenAlert] = useState<boolean>(true);
   const [alertInfo, setAlertInfo] = useState<ALertInfo>(initValuesAlert);
   const getData = () => {
-    const URL = `http://users-crud.academlo.tech/users/`;
+    const URL = `https://users-crud.academlo.tech/users/`;
     axios
       .get(URL)
       .then((res) => setUsers(res.data))
       .catch((err) => console.log(err));
   };
   const createNewUsers = (data: Users) => {
-    const URL = `http://users-crud.academlo.tech/users/`;
+    const URL = `https://users-crud.academlo.tech/users/`;
     axios
       .post(URL, data)
       .then(() => {
         getData();
         setIsSuccessfully(true);
-        //The users <b>{alertInfo.name}</b> was {alertInfo.status} successfully
         const dataAlert = {
           title: "Add User",
           message: `The users  <b>${data.first_name} ${data.last_name}</b> was added successfully`,
@@ -47,7 +46,7 @@ const crud = () => {
       });
   };
   const deleteUsers = (id: number) => {
-    const URL = `http://users-crud.academlo.tech/users/${id}/`;
+    const URL = `https://users-crud.academlo.tech/users/${id}/`;
     axios
       .delete(URL)
       .then(() => {
@@ -76,7 +75,7 @@ const crud = () => {
   };
 
   const updateUser = (id: number, data: Users) => {
-    const URL = `http://users-crud.academlo.tech/users/${id}/`;
+    const URL = `https://users-crud.academlo.tech/users/${id}/`;
     axios
       .put(URL, data)
       .then(() => {
