@@ -53,7 +53,7 @@ const crud = () => {
         getData();
         const dataAlert = {
           title: "Delete User",
-          message: `The users with id <b>${id}</b>  was added successfully`,
+          message: `The users with id <b>${id}</b>  was delete successfully`,
           status: "removed",
         };
         setAlertInfo(dataAlert);
