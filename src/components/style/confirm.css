@@ -12,6 +12,7 @@
   margin: 0 15px;
   color: azure;
   transition: transform .5s ease;
+  position: relative;
 }
 .confirm:hover {
   transform: scale(1.01);

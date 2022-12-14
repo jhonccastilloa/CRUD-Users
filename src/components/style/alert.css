@@ -1,6 +1,7 @@
 .alert{
-  width: 450px;
+  max-width: 450px;
   background-color: #00000099;
+  margin: 0 15px;
   border-radius: 20px;
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
@@ -10,6 +11,7 @@
   gap: 25px;
   transition: transform .5s ease;
   color: aliceblue;
+  position: relative;
 }
 .alert__x {
   position: absolute;
